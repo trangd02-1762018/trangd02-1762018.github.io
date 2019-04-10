@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Natural World</title>
+    </head>
+    <body>
+        <h1>Natural World</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TaCAPBAMiYM?start=180" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        <div style="text-align:center"> 
+            <button onclick="playPause()">Play/Pause</button> 
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+            <br><br>
+            <video id="video1" width="420">
+              <source src="https://github.com/trangd02-1762018/trangd02-1762018.github.io/black_bear (online-video-cutter.com).mp4" type="video/mp4">
+              
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+<object width="400" height="400" data="http://depts.washington.edu/chem/undergrad/documents/biochem2018.pdf">
+</object>
+
+</body> 
+</html>
